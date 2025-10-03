@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Carolinian Marketplace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🛒</span>
+                Carolinian <span>Marketplace</span>
+            </a>
+            
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="browse.html">Browse</a></li>
+                    <li><a href="sell.html">Sell</a></li>
+                    <li><a href="admin.html">Admin</a></li>
+                </ul>
+            </nav>
+            
+            <div class="nav-actions">
+                <a href="login.html" class="btn btn-outline">Logout</a>
+                <button class="mobile-menu-btn" id="mobile-menu-toggle">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="admin-container container">
+        <h2 class="section-title">Admin Dashboard</h2>
+        
+        <div class="admin-stats">
+            <div class="stat-card">
+                <div class="stat-number">1,254</div>
+                <div class="stat-label">Total Listings</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">892</div>
+                <div class="stat-label">Active Users</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">42</div>
+                <div class="stat-label">Reports This Week</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">98%</div>
+                <div class="stat-label">Satisfaction Rate</div>
+            </div>
+        </div>
+        
+        <div class="admin-actions">
+            <div class="action-card">
+                <h3>Manage Listings</h3>
+                <p>View, edit, or remove marketplace listings</p>
+                <button class="btn btn-primary" style="margin-top: 15px;">Manage</button>
+            </div>
+            <div class="action-card">
+                <h3>User Management</h3>
+                <p>Manage user accounts and permissions</p>
+                <button class="btn btn-primary" style="margin-top: 15px;">Manage</button>
+            </div>
+            <div class="action-card">
+                <h3>Reports & Analytics</h3>
+                <p>View platform analytics and reports</p>
+                <button class="btn btn-primary" style="margin-top: 15px;">View</button>
+            </div>
+            <div class="action-card">
+                <h3>Site Settings</h3>
+                <p>Configure marketplace settings</p>
+                <button class="btn btn-primary" style="margin-top: 15px;">Configure</button>
+            </div>
+        </div>
+        
+        <div class="form-container">
+            <h3>Recent Reports</h3>
+            <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+                <thead>
+                    <tr style="background-color: var(--light-green);">
+                        <th style="padding: 12px; text-align: left;">Report ID</th>
+                        <th style="padding: 12px; text-align: left;">Listing</th>
+                        <th style="padding: 12px; text-align: left;">Reported By</th>
+                        <th style="padding: 12px; text-align: left;">Status</th>
+                        <th style="padding: 12px; text-align: left;">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="border-bottom: 1px solid var(--light-gray);">
+                        <td style="padding: 12px;">#R-7842</td>
+                        <td style="padding: 12px;">Calculus Textbook</td>
+                        <td style="padding: 12px;">user@usc.edu</td>
+                        <td style="padding: 12px;"><span style="color: var(--accent-yellow);">Pending</span></td>
+                        <td style="padding: 12px;">
+                            <button class="btn btn-outline" style="padding: 5px 10px; font-size: 0.8rem;">Review</button>
+                        </td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid var(--light-gray);">
+                        <td style="padding: 12px;">#R-7841</td>
+                        <td style="padding: 12px;">Basketball Jersey</td>
+                        <td style="padding: 12px;">user2@usc.edu</td>
+                        <td style="padding: 12px;"><span style="color: var(--primary-green);">Resolved</span></td>
+                        <td style="padding: 12px;">
+                            <button class="btn btn-outline" style="padding: 5px 10px; font-size: 0.8rem;">View</button>
+                        </td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid var(--light-gray);">
+                        <td style="padding: 12px;">#R-7840</td>
+                        <td style="padding: 12px;">iPad Pro</td>
+                        <td style="padding: 12px;">user3@usc.edu</td>
+                        <td style="padding: 12px;"><span style="color: var(--accent-yellow);">Pending</span></td>
+                        <td style="padding: 12px;">
+                            <button class="btn btn-outline" style="padding: 5px 10px; font-size: 0.8rem;">Review</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Carolinian Marketplace</h3>
+                    <p>USC's trusted platform for students to buy and sell items within the campus community.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">f</a>
+                        <a href="#" class="social-icon">t</a>
+                        <a href="#" class="social-icon">in</a>
+                        <a href="#" class="social-icon">ig</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="browse.html">Browse Items</a></li>
+                        <li><a href="sell.html">Sell an Item</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Help & Support</h3>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Safety Guidelines</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Report an Issue</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>University Resources</h3>
+                    <ul>
+                        <li><a href="#">USC Main Website</a></li>
+                        <li><a href="#">Student Affairs</a></li>
+                        <li><a href="#">Campus Safety</a></li>
+                        <li><a href="#">Student Organizations</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Carolinian Marketplace. This site is for USC students, by USC students.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-toggle').addEventListener('click', function() {
+            document.getElementById('main-nav').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

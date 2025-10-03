@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Carolinian Marketplace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🛒</span>
+                Carolinian <span>Marketplace</span>
+            </a>
+            
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="browse.html">Browse</a></li>
+                    <li><a href="sell.html">Sell</a></li>
+                </ul>
+            </nav>
+            
+            <div class="nav-actions">
+                <a href="login.html" class="btn btn-outline">Login</a>
+                <a href="signup.html" class="btn btn-primary">Sign Up</a>
+                <button class="mobile-menu-btn" id="mobile-menu-toggle">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="form-container">
+            <h2>Login to Your Account</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="email">USC Email</label>
+                    <input type="email" id="email" name="email" required placeholder="username@usc.edu">
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required placeholder="Enter your password">
+                </div>
+                
+                <div class="form-actions">
+                    <div>
+                        <input type="checkbox" id="remember-me" name="remember-me">
+                        <label for="remember-me">Remember me</label>
+                    </div>
+                    <a href="#">Forgot password?</a>
+                </div>
+                
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 20px;">Login</button>
+                
+                <p style="text-align: center; margin-top: 20px;">
+                    Don't have an account? <a href="signup.html">Sign up here</a>
+                </p>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Carolinian Marketplace</h3>
+                    <p>USC's trusted platform for students to buy and sell items within the campus community.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">f</a>
+                        <a href="#" class="social-icon">t</a>
+                        <a href="#" class="social-icon">in</a>
+                        <a href="#" class="social-icon">ig</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="browse.html">Browse Items</a></li>
+                        <li><a href="sell.html">Sell an Item</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Help & Support</h3>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Safety Guidelines</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Report an Issue</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>University Resources</h3>
+                    <ul>
+                        <li><a href="#">USC Main Website</a></li>
+                        <li><a href="#">Student Affairs</a></li>
+                        <li><a href="#">Campus Safety</a></li>
+                        <li><a href="#">Student Organizations</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Carolinian Marketplace. This site is for USC students, by USC students.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-toggle').addEventListener('click', function() {
+            document.getElementById('main-nav').classList.toggle('active');
+        });
+
+        // Form submission
+        document.getElementById('login-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // In a real application, you would send the form data to a server here
+            alert('Login successful!');
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>

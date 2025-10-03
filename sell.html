@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell an Item | Carolinian Marketplace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🛒</span>
+                Carolinian <span>Marketplace</span>
+            </a>
+            
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="browse.html">Browse</a></li>
+                    <li><a href="sell.html">Sell</a></li>
+                </ul>
+            </nav>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Search for books, uniforms, electronics...">
+                <button>Search</button>
+            </div>
+            
+            <div class="nav-actions">
+                <a href="login.html" class="btn btn-outline">Login</a>
+                <a href="signup.html" class="btn btn-primary">Sign Up</a>
+                <button class="mobile-menu-btn" id="mobile-menu-toggle">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="form-container">
+            <h2>Sell an Item</h2>
+            <form id="sell-form">
+                <div class="form-group">
+                    <label for="item-title">Item Title</label>
+                    <input type="text" id="item-title" name="item-title" required placeholder="e.g., Calculus Textbook 4th Edition">
+                </div>
+                
+                <div class="form-group">
+                    <label for="item-category">Category</label>
+                    <select id="item-category" name="item-category" required>
+                        <option value="">Select a category</option>
+                        <option value="textbooks">Textbooks</option>
+                        <option value="uniforms">Uniforms & Apparel</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="dorm">Dorm Supplies</option>
+                        <option value="misc">Miscellaneous</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="item-price">Price ($)</label>
+                    <input type="number" id="item-price" name="item-price" min="0" step="0.01" required placeholder="0.00">
+                </div>
+                
+                <div class="form-group">
+                    <label for="item-condition">Condition</label>
+                    <select id="item-condition" name="item-condition" required>
+                        <option value="">Select condition</option>
+                        <option value="new">New</option>
+                        <option value="like-new">Like New</option>
+                        <option value="good">Good</option>
+                        <option value="fair">Fair</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="item-description">Description</label>
+                    <textarea id="item-description" name="item-description" required placeholder="Describe your item..."></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="item-images">Upload Images</label>
+                    <input type="file" id="item-images" name="item-images" accept="image/*" multiple>
+                    <small>You can upload up to 5 images</small>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="button" class="btn btn-outline">Save as Draft</button>
+                    <button type="submit" class="btn btn-primary">List Item</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Carolinian Marketplace</h3>
+                    <p>USC's trusted platform for students to buy and sell items within the campus community.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">f</a>
+                        <a href="#" class="social-icon">t</a>
+                        <a href="#" class="social-icon">in</a>
+                        <a href="#" class="social-icon">ig</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="browse.html">Browse Items</a></li>
+                        <li><a href="sell.html">Sell an Item</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Help & Support</h3>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Safety Guidelines</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Report an Issue</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>University Resources</h3>
+                    <ul>
+                        <li><a href="#">USC Main Website</a></li>
+                        <li><a href="#">Student Affairs</a></li>
+                        <li><a href="#">Campus Safety</a></li>
+                        <li><a href="#">Student Organizations</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Carolinian Marketplace. This site is for USC students, by USC students.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-toggle').addEventListener('click', function() {
+            document.getElementById('main-nav').classList.toggle('active');
+        });
+
+        // Form submission
+        document.getElementById('sell-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Your item has been listed successfully!');
+            // In a real application, you would send the form data to a server here
+        });
+    </script>
+</body>
+</html>
