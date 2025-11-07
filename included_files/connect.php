@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
-$dbUsername = "s07504009_EzPA";
-$password = "EzPA2025";
-$dbname = "s07504009_EzPA";
+$dbUsername = "s16101959_carolinianmarket";
+$password = "Ihave100AFAMs";
+$dbname = "s16101959_carolinianmarket";
 	
 // Create connection
 $conn = mysqli_connect($servername, $dbUsername, $password, $dbname);
@@ -10,4 +10,5 @@ $conn = mysqli_connect($servername, $dbUsername, $password, $dbname);
 if (!$conn) {
 	die("Connection failed: " . mysqli_connect_error());
 }
+
 ?>
